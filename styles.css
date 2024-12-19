@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Outfit", serif;
+    color: rgb(49, 49, 49);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 0;
+}
+
+.box1 {
+    background-color: rgb(23, 255, 216);
+}
+.box2 {
+    background-color: rgb(23, 220, 255);
+}
+.box3 {
+    background-color: rgb(23, 116, 255);
+}
+.box4 {
+    background-color: rgb(23, 46, 255);
+}
+
+.box:focus {
+    outline: none;
+}
+
+.text-to-start {
+    user-select: none;
+}
+
+.pressed {
+    box-shadow: 0 5px 10px rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
+}
+
+.game-over {
+    background-color: rgb(255, 140, 140);
+}
